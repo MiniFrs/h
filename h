@@ -6,11 +6,14 @@ local ToggleTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-local PlayerToggles = Tab:AddSection({
-	Name = "PlayerToggles"
+ToggleTab:AddDropdown({
+	Name = "Toggles",
+	Default = "1",
+	Options = {"1", "2"},
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+	end    
 })
-
 local HubTab = Window:MakeTab({
 	Name = "Main Hub",
 	Icon = "rbxassetid://4483345998",
@@ -20,7 +23,9 @@ local HubTab = Window:MakeTab({
 local Hub = HubTab:AddSection({
 	Name = "Hub"
 })
-
+local PlayerToggles = Tab:AddSection({
+	Name = "PlayerToggles"
+})
 
 ToggleTab:AddToggle({
 	Name = "Jump High",
@@ -60,3 +65,5 @@ Hub:NewToggle("Jump High", "Jump really high", function(state)
             print(1)
         end
 end)
+
+OrionLib:Init()
