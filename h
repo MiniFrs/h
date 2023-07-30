@@ -1,5 +1,5 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Mini's Studio Hub", "MidNight") 
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Da Rizz Studios", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Main = Window:NewTab("Main")
 local MainSection = Tab:NewSection("MainSection")
@@ -49,4 +49,3 @@ end)
 OtherUI:NewButton("Faded", "Faded UI", function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
 end)
-end
