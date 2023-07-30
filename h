@@ -21,9 +21,19 @@ local PlayerToggles = Tab:AddSection({
 })
 
 
-Hub:NewSlider("Speed", "Choose your speed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
+PlayerToggles:AddToggle({
+	Name = "This is a toggle!",
+	Default = false,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+	end    
+})
+
+CoolToggle:Set(true)
+
+
+
+
 
 Hub:NewToggle("Jump High", "Jump really high", function(state)
         if state then
