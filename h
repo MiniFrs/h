@@ -29,7 +29,7 @@ PlayerToggles:AddToggle({
 	end    
 })
 
-CoolToggle:Set(true)
+PlayerToggle:Set(true)
 
 
 
