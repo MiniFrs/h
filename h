@@ -4,7 +4,7 @@ OrionLib:MakeNotification({
 	Name = "Da Rizz Studio's",
 	Content = "You have succsesfully loaded da rizz studio hub!",
 	Image = "rbxassetid://4483345998",
-	Time = 5
+	Time = 4
 })
 	
 local ToggleTab = Window:MakeTab({
