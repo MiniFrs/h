@@ -12,11 +12,6 @@ local ToggleTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-ToggleTab:AddButton({
-	Name = "High Jump Power!",
-	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
-  	end    
-})
 
 local HubTab = Window:MakeTab({
 	Name = "Main Hub",
@@ -42,6 +37,14 @@ ToggleTab:AddSlider({
 	Callback = function(Value)
 		game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = bananas
 	end    
+})
+
+
+
+ToggleTab:AddButton({
+	Name = "High Jump Power!",
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+  	end    
 })
 
 
