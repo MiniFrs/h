@@ -3,6 +3,11 @@ local Window = OrionLib:MakeWindow({Name = "Da Rizz Studios", HidePremium = fals
 
 local Main = Window:NewTab("Main")
 local MainSection = main:NewSection("MainSection")
+local main = Window:MakeTab({
+	Name = "Thing 1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
 MainSection:NewSlider("Speed", "Choose your speed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
