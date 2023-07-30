@@ -20,21 +20,6 @@ local PlayerToggles = Tab:AddSection({
 	Name = "PlayerToggles"
 })
 
-ToggleTab:AddSlider({
-	Name = "Speed",
-	Min = 0,
-	Max = 200,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "bananas",
-	Callback = function(Value)
-		game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = bananas
-	end    
-})
-
-
-
 
 Hub:NewSlider("Speed", "Choose your speed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
