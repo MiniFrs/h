@@ -1,6 +1,12 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Da Rizz Studio's", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-
+OrionLib:MakeNotification({
+	Name = "Da Rizz Studio's",
+	Content = "You have succsesfully loaded da rizz studio hub!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+	
 local ToggleTab = Window:MakeTab({
 	Name = "Toggles",
 	Icon = "rbxassetid://4483345998",
