@@ -16,12 +16,17 @@ local HubTab = Window:MakeTab({
 local Hub = HubTab:AddSection({
 	Name = "Hub"
 })
-local PlayerToggles = Tab:AddSection({
-	Name = "PlayerToggles"
-})
+ToggleTab:AddToggle({
+	Name = "Jump High",
+	Default = false,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+	end    
+}) 
 
 
-PlayerToggles:AddToggle({
+        
+ToggleTab:AddToggle({
 	Name = "This is a toggle!",
 	Default = false,
 	Callback = function(Value)
