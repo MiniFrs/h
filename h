@@ -1,15 +1,18 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Testinf", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Da Rizz Studio's", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
-local Main = Window:NewTab("Main")
-local Section = Window:AddSection({
-	Name = "Home"
-})
-local main = Window:MakeTab({
-	Name = "Thing 1",
+local Tab = Window:MakeTab({
+	Name = "Toggles",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+local PlayerToggles = Tab:AddSection({
+	Name = "PlayerToggles"
+})
+
+	
+
 Section:NewSlider("Speed", "Choose your speed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
