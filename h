@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Da Rizz Studios", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Testinf", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Main = Window:NewTab("Main")
 local Section = Window:AddSection({
