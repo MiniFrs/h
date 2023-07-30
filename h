@@ -2,11 +2,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Window = OrionLib:MakeWindow({Name = "Da Rizz Studios", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Main = Window:NewTab("Main")
-local MainSection = Tab:NewSection("MainSection")
-local Toggles = Window:NewTab("Toggles")
-local ToggleSection = Tab:NewSection("ToggleSection")
-local OtherUI = Window:NewTab("Other UI")
-local UISection = Tab:NewSection("UI Section")
+local MainSection = main:NewSection("MainSection")
 
 MainSection:NewSlider("Speed", "Choose your speed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
@@ -35,17 +31,4 @@ MainSection:NewToggle("Jump High", "Jump really high", function(state)
         else
             print(1)
         end
-end)
-
-
-OtherUI:NewButton("Faded", "Faded UI", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
-end)
-
-    OtherUI:NewButton("SWAG MODE", "Swag Mode UI", function()
-        loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()", true))()
-    end)
-
-OtherUI:NewButton("Faded", "Faded UI", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
 end)
