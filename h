@@ -12,14 +12,12 @@ local ToggleTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-ToggleTab:AddDropdown({
-	Name = "Toggles",
-	Default = "1",
-	Options = {"1", "2"},
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
-	end    
+ToggleTab:AddButton({
+	Name = "High Jump Power!",
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+  	end    
 })
+
 local HubTab = Window:MakeTab({
 	Name = "Main Hub",
 	Icon = "rbxassetid://4483345998",
@@ -33,11 +31,16 @@ local PlayerToggles = Tab:AddSection({
 	Name = "PlayerToggles"
 })
 
-ToggleTab:AddToggle({
-	Name = "Jump High",
-	Default = false,
+ToggleTab:AddSlider({
+	Name = "Speed",
+	Min = 0,
+	Max = 200,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "bananas",
 	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
+		game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = bananas
 	end    
 })
 
