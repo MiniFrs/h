@@ -31,10 +31,7 @@ ToggleTab:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
-	end    
-})
-
-PlayerToggle:Set(true)
+	})
 
 
 
