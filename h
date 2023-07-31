@@ -16,11 +16,11 @@ local HubTab = Window:MakeTab({
 local Hub = HubTab:AddSection({
 	Name = "Hub"
 })
-ToggleTab:AddToggle({
-	Name = "Jump High",
+HubTab:AddToggle({
+	Name = "Hello",
 	Default = false,
 	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+		print("hello")
 	end    
 }) 
 
@@ -31,35 +31,18 @@ ToggleTab:AddToggle({
 	Default = false,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
+end
 	})
 
+ToggleTab:AddToggle({
+	Name = "Jump High",
+	Default = false,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+	end    
+}) 
 
 
 
-
-Hub:NewToggle("Jump High", "Jump really high", function(state)
-        if state then
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 200
-        else
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
-        end
-end)
-
-Hub:NewToggle("", "Jump really high", function(state)
-        if state then
-            print(1)
-        else
-            print(1)
-        end
-end)
-
-
-Hub:NewToggle("Jump High", "Jump really high", function(state)
-        if state then
-            print(1)
-        else
-            print(1)
-        end
-end)
 
 OrionLib:Init()
