@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Da Rizz Studio Hub", HidePremium = false, IntroText = "Da Rizz Studio Hub",SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Da Rizz Studio Hub",HidePremium = false,IntroText = "Da Rizz Studio Hub",SaveConfig = true,ConfigFolder = "OrionTest"})
 	
 local ToggleTab = Window:MakeTab({
 	Name = "Toggles",
