@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Da Rizz Studio's", HidePremium = false, IntroText = "Da Rizz Studio Hub",SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Da Rizz Studio Hub", HidePremium = false, IntroText = "Da Rizz Studio Hub",SaveConfig = true, ConfigFolder = "OrionTest"})
 	
 local ToggleTab = Window:MakeTab({
 	Name = "Toggles",
@@ -24,7 +24,7 @@ HubTab:AddToggle({
 	end    
 }) 
 
-Tab:AddSlider({
+ToggleTab:AddSlider({
 	Name = "Speed!",
 	Min = 0,
 	Max = 180,
@@ -38,22 +38,19 @@ Tab:AddSlider({
 })
 
  
-ToggleTab:AddToggle({
-	Name = "Super Speed",
-	Default = false,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
-end
-	})
 
-ToggleTab:AddToggle({
-	Name = "Jump High",
-	Default = false,
+ToggleTab:AddSlider({
+	Name = "JumpPower!",
+	Min = 0,
+	Max = 180,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "JumpPower",
 	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = JumpPower
 	end    
-}) 
-
+})
 
 
 
