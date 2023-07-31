@@ -16,7 +16,7 @@ local HubTab = Window:MakeTab({
 
 local PopularUI = Window:MakeTab({
 	Name = "PopularUI",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7733960981",
 	PremiumOnly = false
 })
 
@@ -27,14 +27,6 @@ HubTab:AddToggle({
 		print("hi")
 	end    
 }) 
-
-
-PopularUI:AddButton({
-	Name = "SwagMode!",
-	Callback = function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
-  end    
-})
 
 
 
