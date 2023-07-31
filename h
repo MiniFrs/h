@@ -24,8 +24,20 @@ HubTab:AddToggle({
 	end    
 }) 
 
+Tab:AddSlider({
+	Name = "Speed!",
+	Min = 0,
+	Max = 180,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
 
-        
+ 
 ToggleTab:AddToggle({
 	Name = "Super Speed",
 	Default = false,
