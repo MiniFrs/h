@@ -42,7 +42,7 @@ ToggleTab:AddSlider({
 local Input = ToggleTab:CreateInput({
 	Name = "Jump Power"
 	PlaceHolderText = "1-200"
-	RemoveTextAfterFocusLost= true
+	RemoveTextAfterFocusLost = true
 Callback = function(Text)
 	game.Player.LocalPlayer.Character.Humanoid.JumpPower = (Text)
 end
