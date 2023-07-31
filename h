@@ -26,8 +26,8 @@ HubTab:AddToggle({
 
 ToggleTab:AddSlider({
 	Name = "Speed!",
-	Min = 10,
-	Max = 180,
+	Min = 16,
+	Max = 500,
 	Default = 5,
 	Color = Color3.fromRGB(255,255,255),
 	Increment = 3,
@@ -48,7 +48,7 @@ ToggleTab:AddSlider({
 	Increment = 3,
 	ValueName = "JumpPower",
 	Callback = function(Value)
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = JumpPower
+game.Players.LocalPlayer.Character.Humanoid.JumpHeight = Value
 	end    
 })
 
