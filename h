@@ -27,7 +27,7 @@ ToggleTab:AddToggle({
 
         
 ToggleTab:AddToggle({
-	Name = "This is a toggle!",
+	Name = "Super Speed",
 	Default = false,
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 200
