@@ -14,11 +14,6 @@ local HubTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local PopularUI = Window:MakeTab({
-	Name = "PopularUI",
-	Icon = "rbxassetid://7733960981",
-	PremiumOnly = false
-})
 
 HubTab:AddToggle({
 	Name = "Hello",
@@ -51,7 +46,7 @@ local Input = ToggleTab:CreateInput({
 	RemoveTextAfterFocusLost= true
 Callback = function(Text)
 	game.Player.LocalPlayer.Character.Humanoid.JumpPower = (Text)
-end,
+end
 })
 
 
