@@ -32,17 +32,18 @@ HubTab:AddToggle({
 
 
 
-ToggleTab:AddSlider({
-	Name = "Speed!",
-	Min = 16,
-	Max = 500,
-	Default = 5,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 3,
-	ValueName = "Speed",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end    
+PopularTab:AddButton({
+	Name = "BrookhavenUI!",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+  	end
+})
+
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+  	end    
 })
 
 
