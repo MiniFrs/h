@@ -20,15 +20,14 @@ local HubTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-function 
 ToggleTab:AddToggle({
 	Name = "Hello",
 	Default = false,
 	Callback = function(state)
 	if state then
-game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = 180
+	game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = 180
 else
-game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 	end    
 }) 
 
