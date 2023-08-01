@@ -7,6 +7,14 @@ local ToggleTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+
+local PopularTab = Window:MakeTab({
+	Name = "PopularUI",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
 local HubTab = Window:MakeTab({
 	Name = "Main Hub",
 	Icon = "rbxassetid://7733960981",
@@ -35,17 +43,6 @@ ToggleTab:AddSlider({
 	Callback = function(Value)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
 	end    
-})
-
- 
-
-local Input = ToggleTab:CreateInput({
-	Name = "Jump Power"
-	PlaceHolderText = "1-200"
-	RemoveTextAfterFocusLost = true
-Callback = function(Text)
-	game.Player.LocalPlayer.Character.Humanoid.JumpPower = (Text)
-end
 })
 
 
