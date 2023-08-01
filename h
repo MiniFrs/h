@@ -40,7 +40,7 @@ ToggleTab:AddButton({
 
 
 
-Tab:AddTextbox({
+ToggleTab:AddTextbox({
 	Name = "Speed!",
 	Default = "default box input",
 	TextDisappear = true,
