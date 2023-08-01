@@ -35,7 +35,7 @@ HubTab:AddToggle({
 PopularTab:AddButton({
 	Name = "BrookhavenUI!",
 	Callback = function()
-      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
   	end
 })
 
