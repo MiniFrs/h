@@ -30,22 +30,6 @@ HubTab:AddToggle({
 	end    
 }) 
 
-ToggleTab:AddButton({
-	Name = "Reset!",
-	Callback = function()
-      		game.Players.LocalPlayer.Character.Humanoid.Health = 0
-  	end
-})
-
-
-ToggleTab:AddButton({
-	Name = "Reset!",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/MiniUnbloxks/A/main/B", true))()
-  	end
-})
-
-
 
 
 
