@@ -37,12 +37,14 @@ ToggleTab:AddButton({
   	end
 })
 
+
 ToggleTab:AddButton({
-	Name = "Fly Gui"
+	Name = "Reset!",
 	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/MiniUnbloxks/A/main/B", true))()
-end
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/MiniUnbloxks/A/main/B", true))()
+  	end
 })
+
 
 
 
