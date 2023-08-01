@@ -24,10 +24,18 @@ local HubTab = Window:MakeTab({
 ToggleTab:AddButton({
 	Name = "Speed Fast",
 	Callback = function()
-      		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 180
+      		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
   	end
 })
 
+
+
+ToggleTab:AddButton({
+	Name = "High Jump!",
+	Callback = function()
+      		game.Player.LocalPlayer.Character.Humanoid.JumpPower = 10000
+  	end
+})
 
 	
 
