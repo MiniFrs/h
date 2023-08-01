@@ -14,10 +14,6 @@ local PopularTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local ToggleSection = ToggleTab:AddSection({
-	Name = "Toggle"
-})
-
 local HubTab = Window:MakeTab({
 	Name = "Main Hub",
 	Icon = "rbxassetid://7733960981",
@@ -25,11 +21,14 @@ local HubTab = Window:MakeTab({
 })
 
 function 
-HubTab:AddToggle({
+ToggleTab:AddToggle({
 	Name = "Hello",
 	Default = false,
-	Callback = function(Value)
-	
+	Callback = function(state)
+	if state then
+game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = 180
+else
+game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = 16
 	end    
 }) 
 
@@ -40,16 +39,6 @@ ToggleTab:AddButton({
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/MiniUnbloxks/A/main/B"))()
   	end
 })
-
-
-
-ToggleSection:NewToggle("Speed", "Choose your speed", function(state)
-    if state then
-        game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = 180
-    else
-        game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-    end
-end)
 
 
 
