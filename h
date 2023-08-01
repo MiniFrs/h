@@ -14,6 +14,9 @@ local PopularTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local ToggleSection = ToggleTab:AddSection({
+	Name = "Toggle"
+})
 
 local HubTab = Window:MakeTab({
 	Name = "Main Hub",
@@ -21,12 +24,12 @@ local HubTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-
+function 
 HubTab:AddToggle({
 	Name = "Hello",
 	Default = false,
 	Callback = function(Value)
-		print("hilol")
+	
 	end    
 }) 
 
@@ -39,6 +42,14 @@ ToggleTab:AddButton({
 })
 
 
+
+ToggleSection:NewToggle("Speed", "Choose your speed", function(state)
+    if state then
+        game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = 180
+    else
+        game.Player.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
 
 
 
