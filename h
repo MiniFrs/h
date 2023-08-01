@@ -38,7 +38,12 @@ ToggleTab:AddButton({
   	end
 })
 
-
+ToggleTab:AddButton({
+	Name = "Reset!",
+	Callback = function()
+				game.Players.LocalPlayer.Character.Humanoid.Health = 0
+  	end
+})
 
 
 
