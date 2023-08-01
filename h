@@ -31,6 +31,14 @@ HubTab:AddToggle({
 }) 
 
 
+ToggleTab:AddButton({
+	Name = "Fly Gui!",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/MiniUnbloxks/A/main/B"))()
+  	end
+})
+
+
 
 
 
