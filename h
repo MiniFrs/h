@@ -26,7 +26,7 @@ HubTab:AddToggle({
 	Name = "Hello",
 	Default = false,
 	Callback = function(Value)
-		print("hi")
+		print("hilol")
 	end    
 }) 
 
