@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Da Rizz Studio Hub",HidePremium = false,IntroText = "Da Rizz Studio Hub",SaveConfig = true,ConfigFolder = "OrionTest"})
-	
+
 local ToggleTab = Window:MakeTab({
 	Name = "Toggles",
 	Icon = "rbxassetid://4483345998",
@@ -29,6 +29,19 @@ HubTab:AddToggle({
 		print("hi")
 	end    
 }) 
+
+ToggleTab:AddButton({
+	Name = "Reset!",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+  	end
+})
+
+
+
+
+
+
 
 
 
