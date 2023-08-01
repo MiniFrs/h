@@ -40,16 +40,6 @@ ToggleTab:AddButton({
 
 
 
-ToggleTab:AddTextbox({
-	Name = "Speed!",
-	Default = "default box input",
-	TextDisappear = true,
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
-	end	  
-})
-
-
 
 
 ToggleTab:AddButton({
