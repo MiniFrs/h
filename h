@@ -10,7 +10,7 @@ local ToggleTab = Window:MakeTab({
 
 local PopularTab = Window:MakeTab({
 	Name = "PopularUI",
-	Icon = "rbxassetid://4483345998",
+	Icon = "rbxassetid://7734042071",
 	PremiumOnly = false
 })
 
